@@ -1,0 +1,131 @@
+.arrangement-container{
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
+
+.arrangement-container-box{
+  font-size: 18px;
+  background-color: snow;
+  box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+  width: 80%;
+  padding-bottom: 15px;
+  margin-bottom: 5%;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.arrangement-container-box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.arrangement-container-box a:hover {
+  text-decoration: underline;
+}
+
+.arrangement-container-box-info {
+  padding: 1%;
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.arrangement-bilde > img {
+  height: 140px;
+  width: 140px;
+}
+
+.arrangement-container-box-info-tekst {
+  margin-top: 10px;
+  border-top: solid 1px lightgrey;
+}
+
+.arrangement-container-box-admins {
+  border-left: solid 1px lightgrey;
+  box-sizing: border-box;
+  padding: 1%;
+  width: 30%;
+}
+
+.arrangement-container-box-admins a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.arrangement-container-box-admins a:hover {
+  text-decoration: underline;
+}
+
+.arrangement-container-box h1 {
+  background-color: #E0EDC5;
+  padding: 10px;
+}
+
+.arrangement-container-box h1 {
+  background-color: #E0EDC5;
+  padding: 10px;
+}
+
+.arrangement-container-box  p {
+  padding: 5px;
+}
+
+.arr-tittel {
+  grid-area: tittel;
+  width: 100%;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.button-se-kommentar{
+  padding:4px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.button-se-kommentar:hover{
+  background-color: #9CC69B;
+}
+
+.person img {
+  width: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+
+  .arrangement-container-box{
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .arrangement-bilde > img {
+    height: 8em;
+  }
+
+  .arrangement-container-box-admins {
+    padding: 1%;
+    width: 30%;
+  }
+
+  .arr-tittel {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .button-se-kommentar{
+    padding:4px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .arrangement-container-box-admins {
+    width: 30%;
+    font-size: 11px;
+  }
+
+  .arrangement-bilde > img {
+    height: 7em;
+  }
+}

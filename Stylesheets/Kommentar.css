@@ -1,0 +1,53 @@
+.kommentar-container{
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
+}
+
+.kommentar-container > div {
+  padding: 10px;
+}
+
+.kommentar{
+  display: flex;
+  flex-flow: column;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  min-width: 80%;
+  max-width: 80%;
+  padding: 10px;
+}
+
+.kommentar-profil{
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.kommentar-profil > img, h2{
+  padding: 10px;
+}
+
+.kommentar-profil > img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+textarea{
+  resize: none;
+}
+
+.kommentar-tekst{
+
+}
+
+@media only screen and (max-width: 768px) { 
+  .right{
+    display: none;
+  }
+  .left{
+    display:none;
+  }
+}
+

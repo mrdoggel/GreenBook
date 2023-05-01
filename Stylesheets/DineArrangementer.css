@@ -1,0 +1,33 @@
+.arrangement-container{
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+}
+
+.arrangement-container-box{
+  font-size: 18px;
+  background-color: snow;
+  box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 5%;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .right{
+    display: none;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .main {
+    margin-top: 125px;
+  }
+}

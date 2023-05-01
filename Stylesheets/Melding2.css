@@ -1,0 +1,43 @@
+.melding-container{
+    border: 2px solid lightgrey;
+    padding: 5px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    max-width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+ 
+#tekst-boks{
+    resize: none;
+    border-radius: 5px;
+    max-width: 30%;
+   float:left;
+  }
+  #send-btn{
+      float:left;
+  }
+
+.profil>h1{
+    width: 10%;
+    font-size: 1em;
+}
+@media only screen and (max-width: 600px){
+   *,html{
+       margin:0;
+       padding:0;
+   }
+   .left{
+       display:none;
+   }
+   .right{
+       display:none;
+   }
+   .send-container{
+    padding:0;
+    padding-right: 0px;
+}
+}
+
+  

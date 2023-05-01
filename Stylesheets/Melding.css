@@ -1,0 +1,137 @@
+.melding-container{
+  border: 2px solid lightgrey;
+  padding: 5px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  max-height: 25%;
+  height:25%;
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.profil > img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.meldinger{
+  padding: 5px;
+  margin: 5px;
+}
+
+.melding-motatt{
+  border: 2px black solid;
+  padding: 5px;
+  border-radius: 15px;
+  max-width: 80%;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.melding-sendt{
+  border: 2px black solid;
+  padding: 5px;
+  border-radius: 15px;
+  max-width: 80%;
+  margin-bottom: 10px;
+  float: right;
+  background-color:#4F9CED;
+}
+
+.main{
+  height: 0 auto;
+}
+
+#tekst-boks{
+  resize: none;
+  border-radius: 5px;
+  max-width: 50%;
+}
+
+.send-container input{
+    width: 500px;
+    padding: 10px;
+}
+
+#send-btn{
+  background-color: #BDE4A8;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+  padding:10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .melding-container{
+    max-width: 70%;
+  }
+  
+  .profil > img {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  .meldinger{
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .melding-motatt{
+    font-size: 15px;
+    border: 2px black solid;
+    padding: 5px;
+    border-radius: 15px;
+    max-width: 80%;
+    margin-bottom: 10px;
+    float: left;
+  }
+  
+  .melding-sendt{
+    font-size: 15px;
+    border: 2px black solid;
+    padding: 5px;
+    border-radius: 15px;
+    max-width: 80%;
+    margin-bottom: 10px;
+    float: right;
+    background-color:#4F9CED;
+  }
+  
+  #tekst-boks{
+    max-width: 70%;
+  }
+  
+  #send-btn{
+    border-radius: 5px;
+    padding:10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .left{
+    display: none;
+  }
+  .right{
+    display:none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .send-container{
+    max-width: 50%;
+    margin: 0px;
+    margin-right: 0px;
+    width: 50%;
+  }
+  .melding-container{
+    max-width: 60%;
+    margin: 0px;
+  }
+
+  .profil{
+    max-width: 60%;
+    margin:0px;
+  }
+}

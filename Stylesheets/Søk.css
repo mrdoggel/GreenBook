@@ -1,0 +1,24 @@
+.personer a {
+  text-decoration:none;
+  color: inherit;
+}
+
+.personer a:hover {
+  text-decoration: underline;
+}
+
+.foot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.personer {
+    display: flex;
+    flex-flow: row;
+}
+
+.arrangement-container {
+   
+}

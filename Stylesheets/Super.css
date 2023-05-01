@@ -1,0 +1,461 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo > h1{
+  cursor: pointer;
+}
+
+img {
+    box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+}
+
+/* CSSen som styler headern */
+.head{
+  grid-area: header;
+  position: fixed;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  background-color: #92AA83;
+  padding: 10px;
+  z-index: 100;
+}
+
+.head  h1 {
+  font-size: 2em;
+  width: 33%;
+  background-color: #92AA83;
+
+}
+
+.head img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.head img, .headernavn {
+    margin-left: 100px;
+}
+
+.search{
+    
+}
+
+.search input {
+  padding: 7px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.button{
+  padding: 7px;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #BDE4A8;
+  transition: 0.3s;
+}
+.button:hover{
+  background-color: #9CC69B;
+  cursor: pointer;
+}
+
+/* CSSen som styler left */
+.left{
+  grid-area: menu;
+  margin-top:125px;
+}
+
+/* CSSen som styler mainen */
+.main{
+  grid-area: main;
+  padding-bottom: 100px;
+  margin-top:125px;
+}
+
+.main > div {
+  padding: 10px;
+}
+
+/* CSS som styler right */
+.right{
+  grid-area: right;
+  margin-top:125px;
+}
+
+/* CSSen som styler footern */
+.foot{
+  bottom: 10px;
+  width: 100%;
+  position: fixed;
+  max-height: 10px;
+  align-content: center;
+}
+.foot > div {
+  background-color: #92AA83;
+  text-align: center;
+  height: 60px;
+  font-size: 1em;
+}
+
+.footer {
+    
+}
+
+.leftfoot {
+    position: absolute;
+    left: 0;
+    max-width: 33%;
+    display: inline;
+    padding-left: 10px;
+    align-content: center;
+}
+
+.leftfoot {
+    display: inline;
+}
+
+.leftfootbilde{
+    position: absolute;
+    padding-top: 1px;
+    width: 15px;
+    height: 15px;
+    display: inline;
+}
+
+.leftfootbilde img{
+    width: 15px;
+    height: 15px;
+}
+
+.leftfoottekst {
+    position: absolute;
+    display: inline;
+    left: 30px;
+}
+
+.centerfoot {
+    max-width: 33%;
+    display: inline;
+}
+
+.rightfoot {
+    max-width: 33%;
+    position: absolute;
+    right: 0;
+    display: inline;
+    padding-right: 10px;
+}
+
+/* generell styling til container */
+.grid-container{
+    display: grid;
+    position: relative;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+}
+
+.grid-container > div > div {
+  width: 100%;
+}
+
+/* Til arrangementer */
+.arrangement-box {
+  font-size: 18px;
+  background-color: snow;
+  box-shadow: 0px 3px 20px 0px rgb(0 0 0 / 25%);
+  width: 60%;
+  margin-left: 20%;
+  padding-bottom: 15px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.arrangement-container{
+
+}
+.arrangement-bilde {
+  grid-area: bilde;
+}
+
+.arrangement-bilde > img {
+  height: 10em;
+}
+
+.arrangement-info {
+  padding: 1%;
+  box-sizing: border-box;
+  grid-area: info;
+  width: 70%;
+}
+.arrangement-info-tekst {
+  margin-top: 10px;
+  border-top: solid 1px lightgrey;
+}
+
+.arrangement-admins {
+  border-left: solid 1px lightgrey;
+  grid-area: admins;
+  box-sizing: border-box;
+  padding: 1%;
+  width: 30%;
+}
+
+.arrangement-box h1 {
+  background-color: #E0EDC5;
+  padding: 10px;
+}
+
+.arrangement-box  p {
+  padding: 5px;
+}
+
+.header-bilde>img:hover{
+  cursor:pointer;
+}
+
+.header-bilde a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-bilde a:hover{
+    text-decoration: underline;
+}
+
+.border{
+  border-left: 2px solid lightgrey;
+  height: 95%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: none;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #92AA83;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: lightgrey;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 32%;
+  top: 162%;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+@media only screen and (max-width: 992px) {
+
+  /* CSSen som styler headern */
+  .head{
+    margin-bottom: 25px;
+    padding: 10px;
+    justify-content: center;
+
+  }
+
+  .head img {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translate(0, -50%);
+    
+  }
+  
+  .head h1 {
+      position: absolute;
+      top: 50%;
+      left: -40px;
+      transform: translate(0, -50%);
+  }
+  
+ .dropbtn {
+    margin-left: 100px;
+    font-size: 15px;
+  }
+  
+  .headernavn {
+      display: none;
+  }
+
+
+  .search{
+    margin-left: 60px;
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    transform: translate(0, -50%);
+  }
+
+  .search input {
+    padding: 10px;
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .search .button{
+    padding: 7px;
+    width: 50px;
+    border-radius: 10px;
+  }
+
+  .main > div {
+    padding: 10px;
+  }
+
+  /* Til arrangementer */
+  .arrangement-box {
+    font-size: 18px;
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 15px;
+    margin-bottom: 5%;
+  }
+
+  .arrangement-bilde > img {
+    height: 10em;
+  }
+
+  .arrangement-info {
+    padding: 1%;
+    width: 70%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .grid-container{
+    grid-template-areas:
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+    'right right right right right right'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  }
+
+  .logo{
+    max-width: 25%;
+  }
+
+  .head h1 {
+    text-align: left;
+    font-size: 1.5em;
+    width: 20%;
+    padding-left: 1%;
+    margin-left: 50px;
+    margin-right: 0px;
+    position: normal;
+  }
+
+  .head img {
+    max-width: 35px;
+    max-height: 35px;
+    position: normal;
+  }
+
+  .search{
+    max-width: 50%;
+    min-width: 50%;
+    position: normal;
+    margin-left: 250px;
+  }
+
+  .header-bilde{
+    width: 10%;
+  }
+
+  .search input {
+    padding: 8px;
+    width: 55%;
+    font-size: 8px;
+  }
+
+  .dropdown-content {
+    Right: 0;
+    Left: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .head h1 {
+    font-size: 1em;
+  }
+  .head img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  
+  .search {
+      margin-left: 170px;
+  }
+
+  .header-bilde{
+    width: 10%;
+  }
+
+  .button{
+    padding: 7px;
+    width: 20%;
+    font-size: 10px;
+  }
+
+  .dropbtn {
+    padding: 10px;
+    font-size: 10px;
+  }
+  .foot > div {
+    font-size: 1em;
+  }
+
+}
